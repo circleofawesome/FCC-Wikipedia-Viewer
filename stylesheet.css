@@ -1,0 +1,26 @@
+/*
+
+font-family: 'Abril Fatface', cursive; 
+
+^^for the fonts^^
+
+*/
+body{
+	background-image: url("https://res.cloudinary.com/dko5wmcb8/image/upload/v1464744854/type_xyqgyt.png");
+}
+
+
+.page-title{
+	color: #F6EAC7;
+	font-family: 'Abril Fatface', cursive; 
+	font-size: 60px;
+	text-align: center;
+}
+
+.inputForm{
+	border-radius: 2px;
+}
+
+.glyphicon{
+	color: #3B3A3B;
+}
