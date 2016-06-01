@@ -6,8 +6,9 @@ $(document).ready(function() {
 
   $("#searchButton").on('click', function() {
     //main code goes here, functions and stuff
-    var x = document.getElementById("searchInput").value;
-    console.log(x);
+    var searchString = document.getElementById("searchInput").value;
+    //console.log(searchString);
+    searchResults(searchString);
   });
 
   $('#searchInput').keypress(function(e) {
@@ -21,3 +22,16 @@ $(document).ready(function() {
   //***THEN PUT THAT FUNCTION INTO THE BUTTON CLICK FUNCTION
 
 });
+
+function searchResults(searchString){
+  $.ajax({
+    type:'GET',
+    dataType:'JSON',
+    url:'https://en.wikipedia.org//w/api.php?action=opensearch&format=json&search='+searchString+'&callback=?',
+    success:function(data){
+      //console.log(data[0]);  this works
+      $(".right").append("<h1>"+data[0]+"</h1>");
+      $(".right").append("<h1>"+data[2][0]+"</h1>");
+    }
+  });
+}
