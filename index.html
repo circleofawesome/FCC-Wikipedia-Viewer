@@ -1,34 +1,37 @@
 <html>
-	<head>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-		<script src="wikiviewer.js"></script>
-		<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-		<title>Wikiviewer</title>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 left">
-					<div class="row page-title">
-						<div class="col-md-12">Wikipedia Viewer</div>
-					</div>
-					<div class="row top-buffer">
-						<div class="col-md-12 search-row">
-							<form id="searchBox"><input type="text" name="search" size="40" placeholder="What would you like to learn about today?" class="inputForm"><button type="button" class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></form>
-						</div>
-					</div>
-					<div class="row top-buffer">
-						<div class="col-md-12">
-							<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="random-link"><button type="button" class="btn btn-warning btn-lg btn-block random">Random Article</button></a>
-						</div>
-					</div>
-					<div class="row"></div>
-					<div class="row"></div>
-				</div>
-				<div class="col-md-6 right"></div>
-			</div>
-		</div>
-	</body>
+
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="wikiviewer.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+  <title>Wikiviewer</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 left">
+        <div class="row page-title">
+          <div class="col-md-12">Wikipedia Viewer</div>
+        </div>
+        <div class="row top-buffer">
+          <div class="col-md-12 search-row">
+            <form id="searchForm"><input type="text" name="search" size="40" placeholder="What would you like to learn about today?" class="inputForm" id="searchInput"><button id="searchButton" type="button" class="btn btn-warning btn-lg search-button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></form>
+          </div>
+        </div>
+        <div class="row top-buffer">
+          <div class="col-md-12">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="random-link"><button type="button" class="btn btn-warning btn-lg btn-block random">Random Article</button></a>
+          </div>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
+      <div class="col-md-6 right"></div>
+    </div>
+  </div>
+</body>
+
 </html>

@@ -5,39 +5,39 @@ font-family: 'Abril Fatface', cursive;
 ^^for the fonts^^
 
 */
-body{
-	background-image: url("https://res.cloudinary.com/dko5wmcb8/image/upload/v1464744854/type_xyqgyt.png");
+
+body {
+  background-image: url("https://res.cloudinary.com/dko5wmcb8/image/upload/v1464744854/type_xyqgyt.png");
 }
 
-.top-buffer{
-	margin-top: 200px;
+.top-buffer {
+  margin-top: 200px;
 }
 
-
-.page-title{
-	color: #F6EAC7;
-	font-family: 'Abril Fatface', cursive; 
-	font-size: 60px;
-	text-align: center;
+.page-title {
+  color: #F6EAC7;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 60px;
+  text-align: center;
 }
 
-.search-row{
-	text-align: center;
+.search-row {
+  text-align: center;
 }
 
-.inputForm{
-	border-radius: 2px;
+.inputForm {
+  border-radius: 5px;
 }
 
-.glyphicon{
-	color: #3B3A3B;
+.glyphicon {
+  color: #3B3A3B;
 }
 
-.random{
-	color: #3B3A3B;
-	font-family: 'Abril Fatface', cursive; 
+.random {
+  color: #3B3A3B;
+  font-family: 'Abril Fatface', cursive;
 }
 
-.random-link:hover{
-	text-decoration: none;
+.random-link:hover {
+  text-decoration: none;
 }
