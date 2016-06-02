@@ -6,13 +6,14 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <script src="wikiviewer.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
   <title>Wikiviewer</title>
 </head>
 
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 left">
+      <div class="col-md-12 left">
         <div class="row page-title">
           <div class="col-md-12">Wikipedia Viewer</div>
         </div>
@@ -22,14 +23,20 @@
           </div>
         </div>
         <div class="row top-buffer">
-          <div class="col-md-12">
-            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="random-link"><button type="button" class="btn btn-warning btn-lg btn-block random">Random Article</button></a>
+          <div class="col-md-12 center-block">
+            <!--<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="random-link"><button type="button" class="btn btn-warning btn-lg random center-block">Random Article</button></a>-->
+            <form action="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+              <input type="submit" value="Random Article" class="btn btn-warning btn-lg random center-block">
+            </form>
           </div>
         </div>
         <div class="row"></div>
         <div class="row"></div>
       </div>
-      <div class="col-md-6 right"></div>
+      
+    </div>
+    <div class="row">
+      <div class="col-md-12 right"></div>
     </div>
   </div>
 </body>

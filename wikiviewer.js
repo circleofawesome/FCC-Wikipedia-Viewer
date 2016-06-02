@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $(".container-fluid").hide().fadeIn(500);
+
   $("#searchForm").submit(function() {
     event.preventDefault();
   });
@@ -37,7 +39,7 @@ function searchResults(searchString){
       }
 
       function updatePage(num){
-        $(".right").append("<div class='results'><a id='result-links' target='_blank' href='"+data[3][num]+"'><h1>"+data[1][num]+"</h1><br><p>"+data[2][num]+"</p></a></div>");
+        $(".right").append("<div class='results'><a id='result-links' target='_blank' href='"+data[3][num]+"'><h1>"+data[1][num]+"</h1><br><h4>"+data[2][num]+"</h4></a></div>");
       }
       for(i=0;i<10;i++){
         updatePage(i);

@@ -11,7 +11,7 @@ body {
 }
 
 .top-buffer {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .page-title {
@@ -44,7 +44,7 @@ body {
 
 .results{
   color: #3B3A3B;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Passion One', cursive;
   background-color: #F0AD4E;
   border-radius: 10px;
 }
