@@ -35,7 +35,7 @@ function searchResults(searchString){
       //$(".right").append("<div class='linx'><h1>"+data[1][0]+"</h1><br><p>"+data[2][0]+"</p><br><a href='"+data[3][0]+"'>view</a></div>");
       //$(".right").append("<div class='linx'><h1>"+data[1][1]+"</h1><br><p>"+data[2][1]+"</p><br><a href='"+data[3][1]+"'>view</a></div>");
       function updatePage(num){
-        $(".right").append("<div class='results'><a target='_blank' href='"+data[3][num]+"'><h1>"+data[1][num]+"</h1><br><p>"+data[2][num]+"</p></a></div>");
+        $(".right").append("<div class='results'><a id='result-links' target='_blank' href='"+data[3][num]+"'><h1>"+data[1][num]+"</h1><br><p>"+data[2][num]+"</p></a></div>");
       }
       for(i=0;i<10;i++){
         updatePage(i);
