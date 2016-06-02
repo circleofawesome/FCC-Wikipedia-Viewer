@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
   $(".container-fluid").hide().fadeIn(500);
+  $(".refresh").on('click',function(){
+    history.go(0);
+  });
 
   $("#searchForm").submit(function() {
     event.preventDefault();

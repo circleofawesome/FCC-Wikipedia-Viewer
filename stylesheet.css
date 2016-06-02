@@ -21,6 +21,10 @@ body {
   text-align: center;
 }
 
+.refresh:hover{
+  cursor: pointer;
+}
+
 .search-row {
   text-align: center;
 }
