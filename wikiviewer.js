@@ -31,6 +31,11 @@ function searchResults(searchString){
     url:'https://en.wikipedia.org//w/api.php?action=opensearch&format=json&search='+searchString+'&callback=?',
     success:function(data){
       //console.log(data[0]);  this works
+
+      if(data[1].length<1){
+        return $(".right").append("<div class='results'><h1>No results found, please try another search</h1></div>").hide().fadeIn(1000);
+      }
+
       function updatePage(num){
         $(".right").append("<div class='results'><a id='result-links' target='_blank' href='"+data[3][num]+"'><h1>"+data[1][num]+"</h1><br><p>"+data[2][num]+"</p></a></div>");
       }
